@@ -389,7 +389,9 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "ct-kicad"
+    ]
   },
   "meta": {
     "filename": "mk18-pcb.kicad_pro",
