@@ -602,7 +602,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "mk18-pcb.step",
+      "step": "../../../Downloads/mk19-pcb.STEP",
       "vrml": ""
     },
     "page_layout_descr_file": ""
