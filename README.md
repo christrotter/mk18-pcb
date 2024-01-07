@@ -1,9 +1,21 @@
 # mk19-pcb
-Kicad files for the mk19's main circuit board.
+The antithesis of 'keep it simple, stupid' - all the features, all the time.
 
+Do you need to use the Cyboard flex-pcb system?  Multiple Falcon pcbs?  SPI devices?  32 pins for rows/cols?  Perhaps enough RGB to illumine your entire home?  Audio?  ADC?  Reset switch? Power and debug breakouts?  And use an existing RP Pico to do it?
+
+Probably not, which is why I had to design my own pcb.  So here it is...
+
+![](/images/arcboardpcbinator.jpg)
+
+# design goals
+- Provide a re-usable platform for the arcboards that includes all of the normal functions
+- Make it possible to use the Cyboard flex-pcb system
+- Minimize pin usage by moving cols/rows over to shift registers
+- Reduce the amount of fiddly soldering and wire stripping a normal hand-wire requires of you
+- usb-c interconnects
+
+## feature details
 ![](/images/pcb-overview-v1.0.jpg)
-
-## features
 - Raspberry PI Pico (RP2040) footprint - just add pin headers and solder away - or, solder right to pads
 - keys provided through the Cyboard flex-pcb: https://www.cyboard.digital/product-page/dactyl-flex-pcbs
  - or, JST-XH 2.54 headers
@@ -36,13 +48,6 @@ Kicad files for the mk19's main circuit board.
 - care taken to avoid power running alongside signal for too long
 
 ![](/images/pcb-3d-v1.0.jpg)
-
-# design goals
-- Provide a re-usable platform for the arcboards that includes all of the normal functions
-- Make it possible to use the Cyboard flex-pcb system
-- Minimize pin usage by moving cols/rows over to shift registers
-- Reduce the amount of fiddly soldering and wire stripping a normal hand-wire requires of you
-- usb-c interconnects
 
 # schematic overview
 ## mcu
